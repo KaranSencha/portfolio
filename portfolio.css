@@ -23,7 +23,9 @@ html {
   --darkgray: #353535;
   --pink: #d63384;
   --purple: #6610f2;
+  --lavender: #e6e6fa;
   --primary: #0d6efd;
+  --primarylight: #478cf4;
   --green: #198754;
   --orange: #fd7e14;
   --red: #dc3545;
@@ -108,6 +110,7 @@ a:hover {
   height: 50px;
   padding: 12px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #moonIcon {
@@ -197,45 +200,43 @@ hr {
 .project-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 50px;
+  justify-content: center;
   padding-top: 20px;
 }
 
 .project {
-  margin-bottom: 50px;
-  width: 27%;
+  overflow: hidden;
+  width: 35%;
+  background-color: var(--lavender);
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project img {
   width: 100%;
-  height: 300px;
-  background-color: rgb(228, 228, 228);
+  height: 250px;
   object-fit: cover;
-  overflow-y: hidden;
-  object-position: 0;
-}
-
-.project img:hover {
-  object-position: 30% 30%;
-
+  overflow: hidden;
+  transition: all 0.2s linear;
 }
 
 .project .link {
-  font-size: 1.3rem;
-  background-color: var(--primary);
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: var(--primarylight);
   border-radius: 4px;
   text-align: center;
-  padding: 5px 30px;
+  width: 200px;
+  transform: rotate(38deg) translate(52px, -14px);
   position: absolute;
-  top: 255px;
+  top: 0;
   right: 0;
-
 }
 
 .project .link:hover {
-  background-color: #0059ff;
+  background-color: var(--primary);
 }
 
 .project a {
@@ -243,9 +244,10 @@ hr {
 }
 
 .project .desc {
-  padding: 10px 20px;
+  padding-bottom: 4px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 500;
 }
 
 
@@ -454,7 +456,8 @@ footer .copyright {
 }
 
 .navbar-container .hamburger-lines .line {
-background-color: #cbd5e1 !important;;
+  background-color: #cbd5e1 !important;
+  ;
 }
 
 .dark-theme a {
@@ -496,12 +499,6 @@ background-color: #cbd5e1 !important;;
     padding-top: 10%;
     justify-content: space-evenly;
     margin-left: 0;
-  }
-
-
-  /* Project Section */
-  .project {
-    width: 40%;
   }
 
 
