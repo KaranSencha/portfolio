@@ -21,6 +21,10 @@ html {
   --lightgray3: #dfdfdf9c;
   --gray: #807e7e;
   --darkgray: #353535;
+  --savanna-bg: #e9bf8b;
+  --beach-bg: #e7dfcf;
+  --glacier-bg: #b6d6c8;
+  --coral-bg: #e86357;
   --pink: #d63384;
   --purple: #6610f2;
   --lavender: #e6e6fa;
@@ -33,6 +37,18 @@ html {
   --theme-bg: rgb(17, 24, 39);
 }
 
+/* Scroll Bar  */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px;
+}
+
+/* Text Selection */
 ::selection {
   background: var(--pink);
   color: black;
@@ -279,7 +295,7 @@ hr {
 
 .about-section a {
   font-size: 1.25rem;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 12px;
   border-radius: 8px;
   border: 2px solid var(--primary);
@@ -289,12 +305,14 @@ hr {
   width: 250px;
   margin: 40px 20px;
   text-align: center;
+  transition: all 0.3s linear;
 }
 
 .about-section a:hover {
   background-color: var(--primary);
   color: var(--white);
 }
+
 
 
 /* Skill Section  */
@@ -407,14 +425,16 @@ form #submit:hover {
 
 /* Footer Section  */
 footer {
-  line-height: 2;
-  background-color: var(--lightgray1);
-  padding: 30px 0;
+  line-height: 2.5;
+  background-color: #111b21;
+  color: #ccc;
+  padding: 80px 0;
 }
 
 .footer {
   padding: 20px 0 50px 0;
   display: flex;
+  font-size: 1.15rem;
   justify-content: space-around;
 }
 
@@ -423,13 +443,13 @@ footer {
 }
 
 .footer p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .footer-box a {
   text-decoration: none;
-  color: rgb(17, 24, 39);
+  color: #ccc;
 }
 
 .footer-box svg {
@@ -438,7 +458,8 @@ footer {
 }
 
 footer .copyright {
-  color: var(--darkgray);
+  font-size: 1.15rem;
+  color: #aaa;
   text-align: center;
 }
 
