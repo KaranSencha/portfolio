@@ -329,6 +329,7 @@ hr {
 }
 
 .skill-name {
+  font-weight: 500;
   font-size: 1.3rem;
   width: 15%;
 }
@@ -721,17 +722,7 @@ footer .copyright {
 /* Mobile Responsive  */
 @media only screen and (max-width: 600px) {
 
-  /* .nav img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    padding: 7px;
-  } */
-
-
-
   /* Home Section  */
-
   .home-section {
     padding-top: 0;
   }
@@ -750,7 +741,6 @@ footer .copyright {
   .project {
     width: 85%;
   }
-
 
 
   /* About Section  */
@@ -777,17 +767,32 @@ footer .copyright {
     display: none;
   }
 
-
   /* Skill Section  */
+  .skill {
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px 20px;
+  }
 
   .skill-name {
-    width: 30%;
+    padding-left: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
   }
 
   .progress {
-    width: 65%;
+    background-color: var(--lightgray1);
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 23px;
+    overflow: hidden;
   }
 
+  .skill-progress {
+    height: 23px;
+    border-radius: 0.4rem;
+  }
 
 
   /* Contact Section  */
