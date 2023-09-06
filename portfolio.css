@@ -144,6 +144,8 @@ a:hover {
 section h1 {
   padding-bottom: 20px;
   font-size: 3rem;
+  /* color:transparent;
+  -webkit-text-stroke: 2px #222; */
   text-align: center;
   clear: both;
 }
@@ -226,7 +228,11 @@ hr {
   width: 35%;
   background-color: var(--lavender);
   position: relative;
+  transition: transform 0.4s ease-in;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.project:hover {
+  transform: scale(1.1);
 }
 
 .project img {
@@ -459,6 +465,7 @@ footer {
 }
 
 footer .copyright {
+  padding: 0 20px;
   font-size: 1.15rem;
   color: #aaa;
   text-align: center;
@@ -614,7 +621,7 @@ footer .copyright {
     padding-top: 100px;
     background: #111;
     height: 100vh;
-    width: 70%;
+    width: 90%;
     position: absolute;
     right: 0;
     z-index: 2;
@@ -626,7 +633,6 @@ footer .copyright {
     margin-right: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
   }
 
   .navbar .menu-items li {
@@ -664,6 +670,10 @@ footer .copyright {
     justify-content: center;
   }
 
+  .project-section .link {
+    background-color: var(--primary);
+  }
+  
   .project {
     width: 70%;
   }
@@ -807,7 +817,9 @@ footer .copyright {
   label {
     font-size: 1.3rem;
   }
-
+footer {
+  padding: 40px 0;
+}
 
   /* Footer Section  */
   .footer-karan {
@@ -819,6 +831,6 @@ footer .copyright {
   }
 
   .footer p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
