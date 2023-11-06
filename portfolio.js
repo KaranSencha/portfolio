@@ -9,23 +9,18 @@ var typed = new Typed("#element", {
   backDelay: 500,
 });
 
-// Toggle Theme
-const themeButton = document.getElementById("themeButton");
-const sunIcon = document.getElementById("sunIcon");
-const moonIcon = document.getElementById("moonIcon");
-const body = document.body;
-
-themeButton.addEventListener("click", function () {
-  body.classList.toggle("dark-theme");
-
-  if (moonIcon.style.display !== "none") {
-    moonIcon.style.display = "none";
-    sunIcon.style.display = "block";
-  } else {
-    moonIcon.style.display = "block";
-    sunIcon.style.display = "none";
-  }
+// Show menu
+const menuIcon = document.getElementById("menuIcon");
+const menuItem = document.getElementById("menuItem");
+menuIcon.addEventListener("click", function () {
+  menuIcon.classList.toggle("menu-show");
+  menuItem.classList.toggle("menu-show-item");
 });
+
+menuItem.addEventListener("click", function () {
+  menuIcon.classList.toggle("menu-show");
+  menuItem.classList.toggle("menu-show-item");
+})
 
 // Add Active Class
 // Get all the navigation links
@@ -117,7 +112,3 @@ document.addEventListener("DOMContentLoaded", function () {
     follower.style.top = mouseY + scrollY + "px";
   });
 });
-
-
-
-
