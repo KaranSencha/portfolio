@@ -40,7 +40,6 @@ html {
 /* Scroll Bar  */
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: inherit;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -162,16 +161,21 @@ hr {
   clear: both;
 }
 
+.main {
+  position: relative;
+}
+
 .circle {
   display: none;
-  background-color: rgba(72, 72, 72, 0.833);
+  background-color: rgba(72, 72, 72, 0.133);
+  border: 1.5px solid gray;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 99;
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 
