@@ -9,7 +9,7 @@ var typed = new Typed("#element", {
   backDelay: 500,
 });
 
-// Show menu
+// Show/Hide menu
 const menuIcon = document.getElementById("menuIcon");
 const menuItem = document.getElementById("menuItem");
 menuIcon.addEventListener("click", function () {

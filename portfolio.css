@@ -116,7 +116,6 @@ section h1 {
 section {
   padding-left: 2.5vw !important;
   padding-right: 2.5vw !important;
-
 }
 
 hr {
@@ -295,32 +294,36 @@ hr {
   padding: 50px 0;
 }
 
-.skill {
+.skill-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
+  column-gap: 100px;
+  row-gap: 30px;
+}
+
+.skill {
+  width: 35%;
 }
 
 .skill-name {
-  font-weight: 500;
   font-size: 1.3rem;
-  width: 15%;
 }
 
 .progress {
   background-color: var(--lightgray2);
-  border-radius: 0.8rem;
-  width: 80%;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 20px;
 }
 
 .skill-progress {
+  height: 100%;
+  color: #222;
   background-color: rgb(20, 180, 103);
   text-align: center;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
 }
-
 
 
 /* FAQs Section  */
@@ -507,6 +510,16 @@ footer .copyright {
   }
 
 
+  /* Skill Section  */
+  .skill-section {
+    column-gap: 80px;
+    row-gap: 30px;
+  }
+
+  .skill {
+    width: 40%;
+  }
+
   /* FAQs Section  */
   .question-box {
     width: 80%;
@@ -560,6 +573,10 @@ footer .copyright {
     transform: translate(0, -11px) rotate(45deg);
   }
 
+  .menu-show {
+    border: 3px solid #ddd;
+    padding: 1px 2px;
+  }
 
   .logo {
     width: fit-content;
@@ -626,12 +643,13 @@ footer .copyright {
 
 
   /* Skill Section  */
-  .skill-name {
-    width: 20%;
+  .skill-section {
+    column-gap: 50px;
+    row-gap: 30px;
   }
 
-  .progress {
-    width: 75%;
+  .skill {
+    width: 40%;
   }
 
 
@@ -708,31 +726,10 @@ footer .copyright {
     display: none;
   }
 
+
   /* Skill Section  */
   .skill {
-    flex-direction: column;
-    gap: 4px;
-    padding: 6px 20px;
-  }
-
-  .skill-name {
-    padding-left: 5px;
-    font-size: 1.3rem;
-    font-weight: 500;
-    width: 100%;
-  }
-
-  .progress {
-    background-color: var(--lightgray1);
-    border-radius: 0.4rem;
-    width: 100%;
-    height: 23px;
-    overflow: hidden;
-  }
-
-  .skill-progress {
-    height: 23px;
-    border-radius: 0.4rem;
+    width: max(75%, 300px);
   }
 
 
