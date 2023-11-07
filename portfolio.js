@@ -20,8 +20,7 @@ menuIcon.addEventListener("click", function () {
 menuItem.addEventListener("click", function () {
   menuIcon.classList.toggle("menu-show");
   menuItem.classList.toggle("menu-show-item");
-})
-
+});
 
 // Add Active Class
 // Get all the navigation links
@@ -96,7 +95,8 @@ function hideCurrentAnswer() {
     currentAnswerElement.style.maxHeight = null;
     currentAnswerId = null;
   }
-}8
+}
+8;
 
 // Mouse Follower
 document.addEventListener("DOMContentLoaded", function () {
