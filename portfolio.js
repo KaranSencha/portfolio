@@ -22,6 +22,7 @@ menuItem.addEventListener("click", function () {
   menuItem.classList.toggle("menu-show-item");
 })
 
+
 // Add Active Class
 // Get all the navigation links
 const navLinks = document.querySelectorAll("nav a");
@@ -95,7 +96,7 @@ function hideCurrentAnswer() {
     currentAnswerElement.style.maxHeight = null;
     currentAnswerId = null;
   }
-}
+}8
 
 // Mouse Follower
 document.addEventListener("DOMContentLoaded", function () {
