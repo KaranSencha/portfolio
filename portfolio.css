@@ -60,7 +60,7 @@ html {
   position: fixed;
   width: 100%;
   padding-right: 1rem;
-  color: var(--lightgray1);
+  color: var(--lightgray2);
   background-color: var(--black);
   background-color: #090909ea;
   height: 70px;
@@ -96,7 +96,7 @@ html {
 
 .menu-items a.active {
   color: #117964;
-  color:var(--pink);
+  color: var(--pink);
   font-weight: 600;
 }
 
@@ -209,7 +209,11 @@ section {
   background-color: #333;
   position: relative;
   transition: transform 0.4s ease-in;
-  /* box-shadow: ; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.421)
+}
+
+.project:hover {
+  box-shadow: 8px 8px 16px 12px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -290,6 +294,7 @@ section {
   display: flex;
   justify-content: start;
   margin-top: 70px;
+  position: relative;
   gap: 100px;
 }
 
@@ -411,7 +416,8 @@ input {
   margin: 8px 0 20px 0;
   border: 2px solid var(--gray);
   background-color: var(--darktheme);
- color: #ccc;;
+  color: #ccc;
+  ;
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
@@ -419,7 +425,8 @@ input {
 }
 
 textarea:focus {
-  outline: 2px solid var(--gray);;
+  outline: 2px solid var(--gray);
+  ;
 }
 
 input:not(#submit):focus {
@@ -496,7 +503,7 @@ footer .copyright {
 @media only screen and (max-width: 1000px) {
 
   /* Home Section  */
-  .home-section .right{
+  .home-section .right {
     display: none;
   }
 
@@ -677,9 +684,10 @@ footer .copyright {
     font-size: 8vw;
   }
 
-.home-section .right {
-  display: block;
-}
+  .home-section .right {
+    display: block;
+  }
+
   .home-section .right img {
     width: 70vw;
   }

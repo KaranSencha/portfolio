@@ -113,3 +113,17 @@ document.addEventListener("DOMContentLoaded", function () {
     follower.style.top = mouseY + scrollY + "px";
   });
 });
+
+// Form Submit Page
+const submit = document.getElementById("submit");
+submit.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("hello");
+});
+
+// update copyright year automatically
+function updateCopyrightYear() {
+  copyrightYear = document.getElementById("copyrightYear");
+  copyrightYear.innerText = new Date().getFullYear();
+}
+updateCopyrightYear();
