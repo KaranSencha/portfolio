@@ -91,11 +91,11 @@ html {
 
 .menu-items a:hover {
   color: var(--lightgray1);
-  text-decoration: underline;
+  text-decoration: underline var(--pink) 2px;
+  text-underline-offset: 4px;
 }
 
 .menu-items a.active {
-  color: #117964;
   color: var(--pink);
   font-weight: 600;
 }
@@ -403,6 +403,28 @@ form {
   padding: 30px 40px;
   margin: auto;
   width: 50%;
+}
+
+.thank-you {
+  display: none;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.thank-you img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: auto;
+}
+
+.thank-you h3 {
+  font-size: 35px;
+}
+
+.thank-you p {
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 label {

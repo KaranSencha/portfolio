@@ -412,6 +412,7 @@
       <section id="contact">
         <h1>Contact Me</h1>
 
+        <!-- Form  -->
         <form>
           <label for="username">Name</label> <br />
           <input
@@ -426,14 +427,13 @@
 
           <label for="usermail">Email</label><br />
           <input type="email" name="usermail" id="usermail" placeholder="Your Email Id" /><br />
-
+          <!-- add required for all field  FIX   -->
           <label for="usernumber">Phone Number</label><br />
           <input
             type="tel"
             name="usernumber"
             id="usernumber"
             placeholder="Your Phone Number"
-            required
             minlength="10"
             maxlength="12"
           /><br />
@@ -444,6 +444,13 @@
 
           <input id="submit" type="submit" value="Send" />
         </form>
+
+        <!-- Thank You Page  -->
+        <div class="thank-you" id="thankYou">
+          <img src="media/done.svg" alt="" />
+          <h3>Thank You</h3>
+          <p>You message received successfully</p>
+        </div>
       </section>
     </main>
 
@@ -473,8 +480,8 @@
           <p>Connect</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="19"
+            height="18"
             fill="currentColor"
             class="bi bi-linkedin"
             viewBox="0 0 16 16"
@@ -487,8 +494,8 @@
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="19"
+            height="19"
             fill="currentColor"
             class="bi bi-envelope-at"
             viewBox="0 0 16 16"
@@ -504,8 +511,8 @@
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="19"
+            height="19"
             fill="currentColor"
             class="bi bi-chat-right-text"
             viewBox="0 0 16 16"
@@ -522,7 +529,9 @@
         </div>
       </div>
 
-      <div class="copyright">copyright © <span id="copyrightYear"></span> Karan Sencha | All rights reserved.</div>
+      <div class="copyright">
+        copyright © <span id="copyrightYear">2023</span> Karan Sencha | All rights reserved.
+      </div>
     </footer>
 
     <!-- Java Script for Animating typing  -->

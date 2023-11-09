@@ -115,10 +115,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Form Submit Page
-const submit = document.getElementById("submit");
-submit.addEventListener("submit", function (e) {
+
+const form = document.querySelector("form");
+const thankYouPage = document.querySelector(".thank-you");
+
+form.addEventListener("submit", function (e) {
+
+
   e.preventDefault();
-  console.log("hello");
+  form.style.display = "none";
+  thankYouPage.style.display = "block";
+ 
 });
 
 // update copyright year automatically
