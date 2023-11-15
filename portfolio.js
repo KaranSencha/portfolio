@@ -98,34 +98,14 @@ function hideCurrentAnswer() {
 }
 8;
 
-// Mouse Follower
-document.addEventListener("DOMContentLoaded", function () {
-  const follower = document.getElementById("follower");
-
-  document.addEventListener("mousemove", function (event) {
-    const mouseX = event.clientX;
-    const mouseY = event.clientY;
-
-    // Update the position of the circle relative to the scroll position
-    const scrollX = window.scrollX;
-    const scrollY = window.scrollY;
-    follower.style.left = mouseX + scrollX + "px";
-    follower.style.top = mouseY + scrollY + "px";
-  });
-});
-
 // Form Submit Page
-
 const form = document.querySelector("form");
 const thankYouPage = document.querySelector(".thank-you");
 
 form.addEventListener("submit", function (e) {
-
-
   e.preventDefault();
   form.style.display = "none";
   thankYouPage.style.display = "block";
- 
 });
 
 // update copyright year automatically

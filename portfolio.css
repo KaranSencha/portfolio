@@ -198,8 +198,9 @@ section {
 .project-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   justify-content: center;
+  column-gap: 40px;
+  row-gap: 60px;
   padding-top: 20px;
 }
 
@@ -224,12 +225,13 @@ section {
 }
 
 .project .link {
-  letter-spacing: 1px;
+  background-color: var(--primary);
   font-size: 1.25rem;
   font-weight: 600;
-  background-color: var(--primarylight);
-  border-radius: 4px;
+  letter-spacing: 1px;
   text-align: center;
+  z-index: 99;
+  border-radius: 4px;
   width: 200px;
   transform: rotate(38deg) translate(52px, -14px);
   position: absolute;
@@ -238,7 +240,8 @@ section {
 }
 
 .project .link:hover {
-  background-color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .project a {
@@ -252,6 +255,39 @@ section {
   font-weight: 500;
 }
 
+.project-overlay {
+  position: absolute;
+  bottom: 100%;
+  font-size: 1.5rem;
+  padding: 0px 0;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: transparent;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: bottom .5s ease, height .5s ease, color 0.5s ease 0.5s;
+
+}
+
+.project-overlay .first {
+  background-color: purple;
+  padding: 10px 15px;
+}
+
+.project-overlay .second {
+  background-color: #198754;
+  padding: 10px 15px;
+
+}
+
+.project:hover .project-overlay {
+  bottom: calc(100% - 250px);
+  height: 250px;
+  color: #ddd;
+}
 
 /* About Section  */
 #about {
@@ -439,7 +475,6 @@ input {
   border: 2px solid var(--gray);
   background-color: var(--darktheme);
   color: #ccc;
-  ;
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;

@@ -10,7 +10,7 @@
 
     <meta name="author" content="Karan Sencha" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Karan Sencha</title>
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon" />
 
     <!-- CSS File Add  -->
@@ -47,8 +47,6 @@
 
     <!-- Main Body  -->
     <main id="main">
-      <!-- Mouse Follower  -->
-      <div class="circle" id="follower"></div>
 
       <!-- Home  Section-->
       <section id="home">
@@ -80,6 +78,10 @@
               <div class="link">Visit</div>
             </a>
             <div class="desc">CSS Generator</div>
+            <div class="project-overlay">
+              <div class="first">Category : Tools</div>
+              <div class="second">Technology : HTML, CSS, JavaScript, React, Saas</div>
+            </div>
           </div>
 
           <!-- Project - 2 -->
@@ -426,8 +428,14 @@
           /><br />
 
           <label for="usermail">Email</label><br />
-          <input type="email" name="usermail" id="usermail" placeholder="Your Email Id" /><br />
-          <!-- add required for all field  FIX   -->
+          <input
+            type="email"
+            name="usermail"
+            id="usermail"
+            required
+            placeholder="Your Email Id"
+          /><br />
+
           <label for="usernumber">Phone Number</label><br />
           <input
             type="tel"
@@ -436,10 +444,11 @@
             placeholder="Your Phone Number"
             minlength="10"
             maxlength="12"
+            required
           /><br />
 
           <label for="message">Message</label> <br />
-          <textarea name="message" id="message" rows="5"> Hello, Karan</textarea>
+          <textarea name="message" id="message" rows="5" required> Hello, Karan</textarea>
           <br />
 
           <input id="submit" type="submit" value="Send" />
