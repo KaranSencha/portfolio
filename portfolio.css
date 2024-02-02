@@ -54,6 +54,20 @@ html {
   color: black;
 }
 
+/* Cursor follower  */
+/* .cursor {
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  background-color: transparent;
+  background-color: yellow;
+  mix-blend-mode: difference;
+} */
 
 /* Header Section */
 .navbar {
@@ -62,7 +76,8 @@ html {
   padding-right: 1rem;
   color: var(--lightgray2);
   background-color: var(--black);
-  background-color: #090909ea;
+  background-color: #090909b9;
+  backdrop-filter: blur(10px);
   height: 70px;
   z-index: 12;
   display: flex;
@@ -192,6 +207,7 @@ section {
 #projects {
   padding: 50px 32px;
   background-color: var(--darktheme2);
+  background-color: #0E1217;
   color: #ccc;
 }
 
@@ -207,14 +223,17 @@ section {
 .project {
   overflow: hidden;
   width: 35%;
-  background-color: #333;
+  background-color: #1C1F26;
   position: relative;
   transition: transform 0.4s ease-in;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.421)
+  box-shadow:0 6px 6px -2px #00000066;
+  border: 2px solid #222;
+  border-radius: 12px;
 }
 
 .project:hover {
-  box-shadow: 8px 8px 16px 12px rgba(0, 0, 0, 0.5);
+  border: 2px solid #777;
+  transform: scale(1.05);
 }
 
 
@@ -255,39 +274,7 @@ section {
   font-weight: 500;
 }
 
-.project-overlay {
-  position: absolute;
-  bottom: 100%;
-  font-size: 1.5rem;
-  padding: 0px 0;
-  z-index: 9;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  color: transparent;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: bottom .5s ease, height .5s ease, color 0.5s ease 0.5s;
 
-}
-
-.project-overlay .first {
-  background-color: purple;
-  padding: 10px 15px;
-}
-
-.project-overlay .second {
-  background-color: #198754;
-  padding: 10px 15px;
-
-}
-
-.project:hover .project-overlay {
-  bottom: calc(100% - 250px);
-  height: 250px;
-  color: #ddd;
-}
 
 /* About Section  */
 #about {
@@ -326,6 +313,18 @@ section {
   padding-left: 30px;
 }
 
+.green-text {
+  color: var(--green);
+}
+.red-text {
+  color: var(--red);
+}
+.purple-text {
+  color: var(--pink);
+}
+.blue-text {
+  color: var(--primary);
+}
 .resume-box {
   display: flex;
   justify-content: start;
