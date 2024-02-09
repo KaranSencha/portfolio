@@ -534,14 +534,28 @@ footer {
 
 }
 
-.footer-box a:hover {
+.footer-menu a:hover {
   color: #ddd;
   border-bottom: 2.5px solid var(--pink);
 }
 
-.footer-box svg {
-  position: relative;
-  top: 3px;
+.footer-connect div {
+  display: flex;
+  column-gap: 10px;
+  border-bottom: 2px solid transparent;
+  align-items: center;
+  margin-bottom: -4px;
+  justify-content: start;
+}
+
+.footer-connect div:hover {
+  color: #ddd;
+  border-bottom: 2px solid var(--pink);
+}
+
+.footer-box img {
+  width: 22px;
+  height: 22px;
 }
 
 footer .copyright {
@@ -703,6 +717,7 @@ footer .copyright {
   /* FAQs Section  */
   .question-box {
     width: 95%;
+   font-size: 1.25rem;
   }
 
 
@@ -793,7 +808,10 @@ footer .copyright {
     width: max(75%, 300px);
   }
 
-
+/* FAQs Section  */
+.question-box {
+  font-size: 1.2rem;
+}
   /* Contact Section  */
   form {
     border: 1px solid gray;
